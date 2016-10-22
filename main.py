@@ -5,6 +5,7 @@ DEBUG = True
 USERNAME = 'admin'
 PASSWORD = 'password'
 
+
 app = Flask(__name__)
 
 @app.route('/')
