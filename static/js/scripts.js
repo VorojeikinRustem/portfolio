@@ -15,3 +15,15 @@ $('.header > .column > img.left')
     interval  : 200
   })
 ;
+
+// Portfolio
+$('.special.cards .image').dimmer({
+  on: 'hover'
+});
+
+// Modal
+$('.modal-test').click(function(){
+	$('.ui.modal')
+	  .modal('show')
+	;
+});
