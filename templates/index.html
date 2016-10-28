@@ -4,10 +4,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<link rel="stylesheet" type="text/css" href="static/semantic/dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/styles.css">
 	<body>
 
+		<!-- Menu -->
+		<div class="ui top inverted fixed menu segment">
+			<div class="ui text container">
+				<div class="ui inverted secondary pointing right menu">
+					<a class="item active">Features</a>
+					<a class="item">Testimonials</a>
+					<a class="item">Sign-in</a>
+				</div>
+			</div>
+		</div>
+
 		<!-- Service -->
-		<div class="ui vertical stripe segment">
+		<div class="ui vertical stripe segment own-service">
 			<div class="ui text container center aligned">
 				<h3>Service</h3>
 				<div class="ui grid">
@@ -28,18 +40,6 @@
 		</div>
 
 
-<div class="modal-test">Click me</div>
-
-<div class="ui modal">
-  <div class="header">Header</div>
-  <div class="content">
-    <p></p>
-    <p></p>
-    <p></p>
-  </div>
-</div>
-
-
 		<!-- Portfolio -->
 		<div class="ui vertical stripe segment">
 			<div class="ui text container center aligned">
@@ -50,12 +50,20 @@
 							<div class="ui dimmer">
 								<div class="content">
 									<div class="center">
-										<div class="ui inverted button">Add Friend</div>
+										<div class="ui inverted button modal-test">Add Friend</div>
 									</div>
 								</div>
 							</div>
 							<img src="static/img/portfolio/checkout.png">
 						</div>
+						<div class="ui modal">
+							<div class="header">Header</div>
+								<div class="content">
+									<p>1</p>
+									<p>2</p>
+									<p>3</p>
+								</div>
+							</div>
 					</a>
 					<a class="red card">
 						<div class="image blurring dimmable image">
@@ -101,6 +109,51 @@
 			</div>
 		</div>
 
+		<!-- Contact us -->
+		<div class="ui vertical stripe center aligned inverted segment">
+			<div class="ui text container">
+				<h3>Contact us</h3>
+				<p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+				<form class="ui inverted form own-form own-contact">
+					<div class="two fields segment">
+						<div class="ui field labeled input">
+							<div class="ui label">
+								<i class="user icon"></i>
+							</div>
+							<input type="text" name="name" placeholder="Name">
+						</div>
+						<div class="ui field labeled input">
+							<div class="ui label">
+								<i class="mail icon"></i>
+							</div>
+							<input type="email" name="email" placeholder="Email">
+						</div>
+					</div>
+					<div class="ui divider"></div>
+					<textarea></textarea>
+					<div class="ui divider"></div>
+					<button class="ui submit button" type="submit">Submit</button>
+				</form>
+<!-- 
+				<div class="ui massive horizontal list">
+			  		<a href="https://vk.com/te7ris">
+						<i class="vk icon"></i>
+					</a>
+			  		<a href="https://ru.linkedin.com/in/rustem-vorozheykin">
+						<i class="linkedin icon item"></i>
+					</a>
+			  		<a href="skype:stifan_100?chat">
+						<i class="skype icon item"></i>
+					</a>
+			  		<a href="https://www.instagram.com/_te7ris/">
+						<i class="instagram icon item"></i>
+					</a>
+			  		<a href="https://github.com/VorojeikinRustem">
+						<i class="github icon item"></i>
+					</a>
+			  	</div>
+			</div>
+		</div> -->
 
 		<!-- <header class="ui block grid header container">
 			<div class="three wide column">

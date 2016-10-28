@@ -1,0 +1,10 @@
+
+// Custom styles are created with prefix - own-
+.own-service {
+	margin-top: 5rem !important;
+}
+
+.own-contact {
+	max-width: 400px !important;
+	margin: 0 auto;
+}

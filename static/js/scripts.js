@@ -27,3 +27,8 @@ $('.modal-test').click(function(){
 	  .modal('show')
 	;
 });
+
+// Dropdown contact form
+$('.ui.dropdown')
+  .dropdown()
+;
