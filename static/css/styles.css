@@ -6,6 +6,19 @@
 }
 
 .own-contact {
-	max-width: 400px !important;
+	max-width: 450px !important;
 	margin: 0 auto;
+}
+
+.own-skills-list > li {
+	margin-bottom: 0.5rem !important;
+}
+
+.own-header {
+    box-sizing: border-box;
+}
+
+
+img {
+    width: 100%;
 }

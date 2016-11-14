@@ -32,3 +32,21 @@ $('.modal-test').click(function(){
 $('.ui.dropdown')
   .dropdown()
 ;
+
+// Animate scroll to links. Swap active item on menu
+$('a[href^="#"]').bind('click.smoothscroll',function (e) {
+    e.preventDefault();
+    var headerHeight = $('.own-header').outerHeight(),
+        target = this.hash, 
+        $target = $(target),
+        $menuItem = $('.own-header .menu > a');
+    $('html, body').stop().animate({
+        'scrollTop': $target.offset().top - headerHeight
+     }, 500, 'swing', function () {
+     window.location.hash = target;
+     });
+    $menuItem.removeClass('active');
+    $(this).addClass('active');
+    
+    
+ });

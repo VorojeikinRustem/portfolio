@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Rustem portfolio</title>
+		<title>Python/Frontend разработчик. Тестировщик.</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<link rel="stylesheet" type="text/css" href="static/semantic/dist/semantic.min.css">
@@ -8,31 +8,33 @@
 	<body>
 
 		<!-- Menu -->
-		<div class="ui top inverted fixed menu segment">
+		<div class="ui top inverted fixed menu segment own-header">
 			<div class="ui text container">
 				<div class="ui inverted secondary pointing right menu">
-					<a class="item active">Features</a>
-					<a class="item">Testimonials</a>
-					<a class="item">Sign-in</a>
+					<a href="#services" class="item active">Услуги</a>
+					<a href="#skills" class="item">Навыки</a>
+					<a href="#portfolio" class="item">Портфолио</a>
+					<a href="#about" class="item">Обо мне</a>
+					<a href="#contact" class="item">Связаться</a>
 				</div>
 			</div>
 		</div>
 
 		<!-- Service -->
-		<div class="ui vertical stripe segment own-service">
+		<div id="services" class="ui vertical stripe segment own-service">
 			<div class="ui text container center aligned">
-				<h3>Service</h3>
+				<h2>Услуги</h2>
 				<div class="ui grid">
 					<div class="five wide column">
-						<h4>E-Commerce</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+						<h4>Тестирование. Автоматизация задач на сайте.</h4>
+						<p>Разрабатываю тесты на драйвере selenium на python. Сталкивался с большим количеством багов в браузерах при взаимодействии с selenium. Решал данные проблемы. Автоматизация задач на сайте.</p>
 					</div>
 					<div class="six wide column">
-						<h4>Responsive Design</h4>
+						<h4>Адаптивная, кроссбраузерная верстка</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 					</div>
 					<div class="five wide column">
-						<h4>Web Security</h4>
+						<h4>Backend python разработчик</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 					</div>
 				</div>
@@ -40,10 +42,10 @@
 		</div>
 
 		<!-- Skills -->
-		<div class="ui vertical stripe segment center aligned">
+		<div id="skills" class="ui vertical stripe segment center aligned">
 			<div class="ui text container">
-				<h3>Skills</h3>
-				<ul>
+				<h2>Навыки</h2>
+				<ul class="own-skills-list">
 					<li class="ui label">Selenium</li>
 					<li class="ui label">Responsive design</li>
 					<li class="ui label">HTML5</li>
@@ -66,9 +68,12 @@
 <!-- temporarily visible active" style="display: block !important" -->
 
 		<!-- Portfolio -->
-		<div class="ui vertical stripe segment">
+		<div id="portfolio" class="ui vertical stripe segment">
 			<div class="ui text container center aligned">
-				<h3>Portfolio</h3>
+				<h2>Портфолио</h2>
+                {% for t in test %}
+                    <p>{{ t }}</p>
+                {% endfor %}
 				<div class="ui three stackable special cards">
 					<a class="orange card">
 						<div class="image blurring dimmable image">
@@ -85,12 +90,13 @@
 						</div>
 						<div class="ui modal">
 							<div class="header">Header</div>
-								<div class="content">
-									<p>1</p>
-									<p>2</p>
-									<p>3</p>
-								</div>
-							</div>
+                                <img src="static/img/portfolio/checkout.png">
+                            <div class="content">
+                                <p>1</p>
+                                <p>2</p>
+                                <p>3</p>
+                            </div>
+                        </div>
 					</a>
 					<a class="red card">
 						<div class="image blurring dimmable image">
@@ -131,19 +137,28 @@
 		</div>
 
 		<!-- About -->
-		<div class="ui vertical stripe segment center aligned">
+		<div id="about" class="ui vertical stripe segment">
 			<div class="ui text container">
-				<h3>About</h3>
-				<p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+				<h2 class="ui center aligned header">Обо мне</h2>
+				<p>I am a Python/Front-end developer and Tester. I have experience with Selenium / HTML5 / CSS3 / jQuery / Python / Django. I got a Bachelor of Science in Applied Informatics from Crimean Engineering and Pedagogical University. I am a hard worker and enjoy working at all critical conditions. If hired by you I will be responsible to complete the task within the stipulated time frame and with utmost confidence. Outsource me for your project and I promise to bring in the best output.</p>
+				<h4>Areas of Expertise</h4>
+				<ul>
+					<li>Selenium tests</li>
+					<li>HTML5, CSS3, jQuery</li>
+					<li>Python, Django</li>
+					<li>PSD to HTML Conversion</li>
+					<li>HTML5 Responsive Expert</li>
+					<li>Bootstrap, foundation, SemanticUI</li>
+				</ul>
 			</div>
 		</div>
 
 		<!-- Contact us -->
-		<div class="ui vertical stripe center aligned inverted segment">
+		<div id="contact" class="ui vertical stripe center aligned inverted segment">
 			<div class="ui text container">
-				<h3>Contact us</h3>
+				<h1>Обратная связь</h1>
 				<p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
-				<form class="ui inverted form own-form own-contact">
+				<form action="/test" method="post" class="ui inverted form own-form own-contact">
 					<div class="two fields segment">
 						<div class="ui field labeled input">
 							<div class="ui label">
@@ -171,19 +186,19 @@
 		<div class="ui vertical stripe segment center aligned">
 			<div class="ui text container">
 				<div class="ui massive horizontal list">
-			  		<a href="https://vk.com/te7ris">
+			  		<a target="_blank" href="https://vk.com/te7ris">
 						<i class="yellow circular inverted vk icon"></i>
 					</a>
-			  		<a href="https://ru.linkedin.com/in/rustem-vorozheykin">
+			  		<a target="_blank" href="https://ru.linkedin.com/in/rustem-vorozheykin">
 						<i class="orange circular inverted linkedin icon item"></i>
 					</a>
-			  		<a href="skype:stifan_100?chat">
+			  		<a target="_blank" href="skype:stifan_100?chat">
 						<i class="green circular inverted skype icon item"></i>
 					</a>
-			  		<a href="https://www.instagram.com/_te7ris/">
+			  		<a target="_blank" href="https://www.instagram.com/_te7ris/">
 						<i class="blue circular inverted instagram icon item"></i>
 					</a>
-			  		<a href="https://github.com/VorojeikinRustem">
+			  		<a target="_blank" href="https://github.com/VorojeikinRustem">
 						<i class="lightblue circular inverted github icon item"></i>
 					</a>
 			  	</div>
