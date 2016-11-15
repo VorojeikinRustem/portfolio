@@ -50,3 +50,6 @@ $('a[href^="#"]').bind('click.smoothscroll',function (e) {
     
     
  });
+
+// Parallax
+$('.own-main').parallax({imageSrc: '/static/img/background/background-main.jpg'});
