@@ -22,8 +22,9 @@ $('.special.cards .image').dimmer({
 });
 
 // Modal
-$('.modal-test').click(function(){
-	$('.ui.modal')
+$('.own-modal').click(function(){
+	var id = $(this).attr('id');
+	$('#modal-' + id) //.ui.modal
 	  .modal('show')
 	;
 });

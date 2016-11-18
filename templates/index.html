@@ -37,9 +37,6 @@
 				<h2 class="ui center aligned header">Обо мне</h2>
                 <div class="ui items">
                     <div class="item">
-                        <div class="image">
-                            <img src="static/img/avatar.jpg">
-                        </div>
                         <div class="content">
                             <h3>Ворожейкин Рустем Вахидович</h3>
                             <div class="meta">
@@ -71,16 +68,16 @@
 		<div id="services" class="ui vertical stripe segment">
 			<div class="ui text container center aligned">
 				<h2>Услуги</h2>
-				<div class="ui grid">
-					<div class="five wide column">
+				<div class="ui three column stackable grid">
+					<div class="column">
 						<h4>Тестирование. Автоматизация задач на сайте.</h4>
 						<p>Разрабатываю тесты на драйвере selenium на python. Сталкивался с большим количеством багов в браузерах при взаимодействии с selenium. Решал данные проблемы. Автоматизация задач на сайте.</p>
 					</div>
-					<div class="six wide column">
+					<div class="column">
 						<h4>Адаптивная, кроссбраузерная верстка</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 					</div>
-					<div class="five wide column">
+					<div class="column">
 						<h4>Backend python разработчик</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 					</div>
@@ -118,70 +115,35 @@
 		<div id="portfolio" class="ui vertical stripe segment">
 			<div class="ui text container center aligned">
 				<h2>Портфолио</h2>
-                {% for t in test %}
-                    <p>{{ t }}</p>
-                {% endfor %}
 				<div class="ui three stackable special cards">
-					<a class="orange card">
-						<div class="ui top attached blue label">Frontend</div>
+					
+					{% for work in portfolio_works %}
+					<div class="ui card">
+						<div class="ui top attached blue label">{{ work.title}}</div>
 						<div class="image blurring dimmable image">
 							
 							<div class="ui dimmer">
 								<div class="content">
 									<div class="center">
-										<div class="ui circular massive icon button inverted button modal-test">
+										<div id="{{ title }}" class="ui circular massive icon button inverted button own-modal">
 											<i class="zoom icon"></i>
 										</div>
 									</div>
 								</div>
 							</div>
-							<img src="static/img/portfolio/checkout.png">
+							<img src="static/img/portfolio/{{ work.img }}">
 						</div>
-						<div class="ui modal">
-							<div class="header">Frontend</div>
-                                <img src="static/img/portfolio/checkout.png">
+						<div id="modal-{{ title }}" class="ui modal">
+							<div class="header">{{ work.title}}</div>
+                            <img src="static/img/portfolio/{{ work.img }}">
                             <div class="content">
-                                <p>1</p>
-                                <p>2</p>
-                                <p>3</p>
+                                <p>{{ work.desc }}</p>
                             </div>
                         </div>
-					</a>
-					<a class="red card">
-						<div class="image blurring dimmable image">
-							<div class="ui dimmer">
-								<div class="content">
-									<div class="center">
-										<div class="ui inverted button">
-											<i class="zoom icon"></i>
-										</div>
-									</div>
-								</div>
-							</div>
-							<img src="static/img/portfolio/course_work.png">
-						</div>
-					</a>
-					<div class="card">
-						<div class="image">
-							<div class="ui top attached label">HTML</div>
-							<img src="static/img/portfolio/csc_1.png">
-						</div>
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="static/img/portfolio/dashboard-1.png">
-						</div>
-					</div>
-					<div class="card">
-						<div class="image">
-							<img src="static/img/portfolio/diploma.png">
-						</div>
-					</div>
-					<div class="card">
-						<div class="image">
-							<img src="static/img/portfolio/shop4.png">
-						</div>
-					</div>
+					
+					{% endfor %}
+					
 				</div>
 			</div>
 		</div>

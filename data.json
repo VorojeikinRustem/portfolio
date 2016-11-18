@@ -1,62 +1,61 @@
+
 {
-	"shop1": {
-		"title": "shop1",
-		"cat": "frontend",
-		"img": "shop1.png",
-		"desc": "description1"
-	},
-	"shop3": {
-		"title": "shop3",
-		"cat": "frontend",
-		"img": "shop3.png",
-		"desc": "description3"
-	},
-	"shop4": {
-		"title": "shop4",
-		"cat": "frontend",
-		"img": "shop4.png",
-		"desc": "description4"
-	},
-	"shop5": {
-		"title": "shop5",
-		"cat": "frontend",
-		"img": "shop5.png",
-		"desc": "description5"
-	},
-	"shop6": {
-		"title": "shop6",
-		"cat": "frontend",
-		"img": "shop6.png",
-		"desc": "description6"
-	},
-  	"csc": {
-		"title": "csc",
-		"cat": "frontend",
-		"img": "csc.png",
-		"desc": "description_csc"
-	},
-  	"checkout": {
-		"title": "checkout",
-		"cat": "frontend",
-		"img": "checkout.png",
-		"desc": "description"
-	},
-  	"course_work": {
-		"title": "course_work",
-		"cat": "frontend",
-		"img": "course_work.png",
-		"desc": "description"
-	},
-  	"dashboard": {
-		"title": "dashboard",
-		"cat": "frontend",
-		"img": "dashboard.png",
-		"desc": "description"
-	},
-  	"diploma": {
-		"title": "diploma",
-		"cat": "frontend",
-		"img": "diploma.png",
-		"desc": "description"
-	}
+	"title": "shop1",
+	"cat": "frontend",
+	"img": "shop1.png",
+	"desc": "description1"
+}
+{
+	"title": "shop3",
+	"cat": "frontend",
+	"img": "shop3.png",
+	"desc": "description3"
+}
+{
+	"title": "shop4",
+	"cat": "frontend",
+	"img": "shop4.png",
+	"desc": "description4"
+}
+{
+	"title": "shop5",
+	"cat": "frontend",
+	"img": "shop5.png",
+	"desc": "description5"
+}
+{
+	"title": "shop6",
+	"cat": "frontend",
+	"img": "shop6.png",
+	"desc": "description6"
+}
+{
+	"title": "csc",
+	"cat": "frontend",
+	"img": "csc.png",
+	"desc": "description_csc"
+}
+{
+	"title": "checkout",
+	"cat": "frontend",
+	"img": "checkout.png",
+	"desc": "description"
+}
+{
+	"title": "course_work",
+	"cat": "frontend",
+	"img": "course_work.png",
+	"desc": "description"
+}
+{
+	"title": "dashboard",
+	"cat": "frontend",
+	"img": "dashboard.png",
+	"desc": "description"
+}
+{
+	"title": "diploma",
+	"cat": "frontend",
+	"img": "diploma.png",
+	"desc": "description"
 }
