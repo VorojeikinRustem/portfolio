@@ -1,61 +1,72 @@
-
-{
-	"title": "shop1",
-	"cat": "frontend",
-	"img": "shop1.png",
-	"desc": "description1"
-}
-{
-	"title": "shop3",
-	"cat": "frontend",
-	"img": "shop3.png",
-	"desc": "description3"
-}
-{
-	"title": "shop4",
-	"cat": "frontend",
-	"img": "shop4.png",
-	"desc": "description4"
-}
-{
-	"title": "shop5",
-	"cat": "frontend",
-	"img": "shop5.png",
-	"desc": "description5"
-}
-{
-	"title": "shop6",
-	"cat": "frontend",
-	"img": "shop6.png",
-	"desc": "description6"
-}
-{
-	"title": "csc",
-	"cat": "frontend",
-	"img": "csc.png",
-	"desc": "description_csc"
-}
-{
-	"title": "checkout",
-	"cat": "frontend",
-	"img": "checkout.png",
-	"desc": "description"
-}
-{
-	"title": "course_work",
-	"cat": "frontend",
-	"img": "course_work.png",
-	"desc": "description"
-}
-{
-	"title": "dashboard",
-	"cat": "frontend",
-	"img": "dashboard.png",
-	"desc": "description"
-}
-{
-	"title": "diploma",
-	"cat": "frontend",
-	"img": "diploma.png",
-	"desc": "description"
-}
+[
+    {
+        "desc": "<h4>Задачи:</h4><ul><li>Реализовать верстку на основе предоставленного psd дизайна.</li><li>Отдельно реализовать мобильную верстку сайта.</li><li>Покрытие всего функционала сайта автоматизированными тестами.</li><li>Реализовать тесты на основе скриншотов.</li></ul><h4>Особенности:</h4><ul><li>Модульная структура проекта.</li><li>Адаптивная/кроссбраузерная верстка.</li><li>Функционал, процесса заказа товара, должен работать при отключенном JavaScript.</li></ul><h4>Технологии:</h4><ul><li>Препроцессор Stylus.</li><li>Шаблонизатор Jinja2.</li><li>Сборщик webpack.</li><li>Система контроля версий - Git</li><li>Инструмент для тестирования Selenium</li><li>Gitlab, Youtrack и т.п.<li>JavaScript, jQuery, html и т.п.</li></ul>",
+        "slug": "shop1",
+        "title": "Интернет магазин №1",
+        "img": "shop1.png",
+        "cat": "frontend"
+    },
+    {
+        "desc": "<h4>Задачи:</h4><ul><li>Реализовать верстку на основе предоставленного psd дизайна.</li><li>Отдельно реализовать мобильную верстку сайта.</li><li>Покрытие всего функционала сайта автоматизированными тестами.</li><li>Реализовать тесты на основе скриншотов.</li></ul><h4>Особенности:</h4><ul><li>Модульная структура проекта.</li><li>Адаптивная/кроссбраузерная верстка.</li><li>Функционал, процесса заказа товара, должен работать при отключенном JavaScript.</li></ul><h4>Технологии:</h4><ul><li>Препроцессор Stylus.</li><li>Шаблонизатор Jinja2.</li><li>Сборщик webpack.</li><li>Система контроля версий - Git</li><li>Инструмент для тестирования Selenium</li><li>Gitlab, Youtrack и т.п.<li>JavaScript, jQuery, html и т.п.</li></ul>",
+        "slug": "shop3",
+        "title": "Интернет магазин №3",
+        "img": "shop3.png",
+        "cat": "frontend"
+    },
+    {
+        "desc": "<h4>Задачи:</h4><ul><li>Реализовать верстку на основе предоставленного psd дизайна.</li><li>Отдельно реализовать мобильную верстку сайта.</li><li>Покрытие всего функционала сайта автоматизированными тестами.</li><li>Реализовать тесты на основе скриншотов.</li></ul><h4>Особенности:</h4><ul><li>Модульная структура проекта.</li><li>Адаптивная/кроссбраузерная верстка.</li><li>Функционал, процесса заказа товара, должен работать при отключенном JavaScript.</li></ul><h4>Технологии:</h4><ul><li>Препроцессор Stylus.</li><li>Шаблонизатор Jinja2.</li><li>Сборщик webpack.</li><li>Система контроля версий - Git</li><li>Инструмент для тестирования Selenium</li><li>Gitlab, Youtrack и т.п.<li>JavaScript, jQuery, html и т.п.</li></ul>",
+        "slug": "shop4",
+        "title": "Интернет магазин №4",
+        "img": "shop4.png",
+        "cat": "frontend"
+    },
+    {
+        "desc": "<h4>Задачи:</h4><ul><li>Реализовать верстку на основе предоставленного psd дизайна.</li><li>Отдельно реализовать мобильную верстку сайта.</li><li>Покрытие всего функционала сайта автоматизированными тестами.</li><li>Реализовать тесты на основе скриншотов.</li></ul><h4>Особенности:</h4><ul><li>Модульная структура проекта.</li><li>Адаптивная/кроссбраузерная верстка.</li><li>Функционал, процесса заказа товара, должен работать при отключенном JavaScript.</li></ul><h4>Технологии:</h4><ul><li>Препроцессор Stylus.</li><li>Шаблонизатор Jinja2.</li><li>Сборщик webpack.</li><li>Система контроля версий - Git</li><li>Инструмент для тестирования Selenium</li><li>Gitlab, Youtrack и т.п.<li>JavaScript, jQuery, html и т.п.</li></ul>",
+        "slug": "shop5",
+        "title": "Интернет магазин №5",
+        "img": "shop5.png",
+        "cat": "frontend"
+    },
+    {
+        "desc": "<h4>Задачи:</h4><ul><li>Реализовать верстку на основе предоставленного psd дизайна.</li><li>Отдельно реализовать мобильную верстку сайта.</li><li>Покрытие всего функционала сайта автоматизированными тестами.</li><li>Реализовать тесты на основе скриншотов.</li></ul><h4>Особенности:</h4><ul><li>Модульная структура проекта.</li><li>Адаптивная/кроссбраузерная верстка.</li><li>Функционал, процесса заказа товара, должен работать при отключенном JavaScript.</li></ul><h4>Технологии:</h4><ul><li>Препроцессор Stylus.</li><li>Шаблонизатор Jinja2.</li><li>Сборщик webpack.</li><li>Система контроля версий - Git</li><li>Инструмент для тестирования Selenium</li><li>Gitlab, Youtrack и т.п.<li>JavaScript, jQuery, html и т.п.</li></ul>",
+        "slug": "shop6",
+        "title": "Интернет магазин №6",
+        "img": "shop6.png",
+        "cat": "frontend"
+    },
+    {
+        "desc": "description_csc",
+        "slug": "csc",
+        "title": "Сервис обслуживания клиентов",
+        "img": "csc.png",
+        "cat": "frontend"
+    },
+    {
+        "desc": "description",
+        "slug": "checkout",
+        "title": "Сервис оформления заказа",
+        "img": "checkout.png",
+        "cat": "frontend"
+    },
+    {
+        "desc": "description",
+        "slug": "course_work",
+        "title": "Курсовая работа \"Обучающие материалы по Django\"",
+        "img": "course_work.png",
+        "cat": "frontend"
+    },
+    {
+        "desc": "<p>В процессе работы я изучил следующие технологии:</p><ul><li>Фреймворк bootstrap3</li><li>База данных MongoDB</li><li>Система контроля версий - Git</li><li>Библиотека python - pymongo</li><li>AWS</li><li>Веб-сервер Nginx</li></ul><p>Так же в разработке использовались следующие технологии:<ul></li><li>Фреймворк Django</li><li>Фреймворк bootstrap3</li><li>Bash</li><li>HTML, CSS3, JQuery</li></ul>",
+        "slug": "dashboard",
+        "title": "Панель администрирования",
+        "img": "dashboard.png",
+        "cat": "frontend"
+    },
+    {
+        "desc": "description",
+        "slug": "diploma",
+        "title": "Дипломная работа \"Интернет магазин на Django\"",
+        "img": "diploma.png",
+        "cat": "frontend"
+    }
+]

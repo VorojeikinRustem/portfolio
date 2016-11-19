@@ -12,9 +12,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	connection = pymongo.MongoClient("mongodb://localhost")
+	# Works of portfolio
+	connection = pymongo.MongoClient('mongodb://localhost')
 	db = connection.portfolio
 	portfolio_works = list(db.works.find({}, projection={'_id': False}))
+	
 	return render_template('index.html', portfolio_works=portfolio_works)
 
 @app.route('/test', methods=['POST'])

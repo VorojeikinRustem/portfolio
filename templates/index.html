@@ -31,6 +31,7 @@
                 <h2>Фронтенд/Python разработчик. Тестировщик.</h2>
 			</div>
 		</div>
+		
 		<!-- About -->
 		<div id="about" class="ui vertical stripe segment">
 			<div class="ui text container">
@@ -64,27 +65,6 @@
 			</div>
 		</div>
 
-		<!-- Service -->
-		<div id="services" class="ui vertical stripe segment">
-			<div class="ui text container center aligned">
-				<h2>Услуги</h2>
-				<div class="ui three column stackable grid">
-					<div class="column">
-						<h4>Тестирование. Автоматизация задач на сайте.</h4>
-						<p>Разрабатываю тесты на драйвере selenium на python. Сталкивался с большим количеством багов в браузерах при взаимодействии с selenium. Решал данные проблемы. Автоматизация задач на сайте.</p>
-					</div>
-					<div class="column">
-						<h4>Адаптивная, кроссбраузерная верстка</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-					</div>
-					<div class="column">
-						<h4>Backend python разработчик</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<!-- Skills -->
 		<div id="skills" class="ui vertical stripe segment center aligned">
 			<div class="ui text container">
@@ -109,8 +89,6 @@
 		</div>
 
 
-<!-- temporarily visible active" style="display: block !important" -->
-
 		<!-- Portfolio -->
 		<div id="portfolio" class="ui vertical stripe segment">
 			<div class="ui text container center aligned">
@@ -118,32 +96,52 @@
 				<div class="ui three stackable special cards">
 					
 					{% for work in portfolio_works %}
-					<div class="ui card">
-						<div class="ui top attached blue label">{{ work.title}}</div>
+					<div class="card">
 						<div class="image blurring dimmable image">
 							
+
 							<div class="ui dimmer">
 								<div class="content">
 									<div class="center">
-										<div id="{{ title }}" class="ui circular massive icon button inverted button own-modal">
+										<div id="{{ work.slug }}" class="ui circular massive icon button inverted button own-modal">
 											<i class="zoom icon"></i>
 										</div>
 									</div>
 								</div>
 							</div>
-							<img src="static/img/portfolio/{{ work.img }}">
+							<img src="static/img/portfolio/min/{{ work.img }}">
 						</div>
-						<div id="modal-{{ title }}" class="ui modal">
-							<div class="header">{{ work.title}}</div>
+						<div id="modal-{{ work.slug }}" class="ui modal">
+							<div class="header">{{ work.title}}</div><i class="close icon"></i>
                             <img src="static/img/portfolio/{{ work.img }}">
                             <div class="content">
-                                <p>{{ work.desc }}</p>
+                                {{ work.desc|safe }}
                             </div>
                         </div>
 					</div>
-					
 					{% endfor %}
 					
+				</div>
+			</div>
+		</div>
+
+		<!-- Service -->
+		<div id="services" class="ui vertical stripe segment">
+			<div class="ui text container center aligned">
+				<h2>Услуги</h2>
+				<div class="ui three column stackable grid">
+					<div class="column">
+						<h4>Тестирование. Автоматизация задач на сайте.</h4>
+						<p>Разрабатываю тесты на драйвере selenium на python. Сталкивался с большим количеством багов в браузерах при взаимодействии с selenium. Решал данные проблемы. Автоматизация задач на сайте.</p>
+					</div>
+					<div class="column">
+						<h4>Адаптивная, кроссбраузерная верстка</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+					</div>
+					<div class="column">
+						<h4>Backend python разработчик</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+					</div>
 				</div>
 			</div>
 		</div>

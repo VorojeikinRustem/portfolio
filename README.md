@@ -1,6 +1,11 @@
 # portfolio
 
+Update data.json 
+```
+python init_data.py
+```
+
 Create database on mongodb from data.json file:
 ```
-mongoimport --db portfolio --collection works --file data.json
+mongo portfolio --eval "db.dropDatabase()" & mongoimport --db portfolio --collection works --jsonArray --file data.json
 ```
