@@ -12,12 +12,16 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+	# List of skills
+	skills = ['Selenium', 'Responsive design', 'HTML5', 'CSS3', 'Bootstrap', 'Python', 'Django', 'JavaScript', 'jQuery', 'PostgreSQL', 'Git', 'Кроссбраузерная верстка', 'MongoDB', 'Linux', 'Semantic ui', 'Foundation css', 'Адаптивная верстка', 'bash']
 	# Works of portfolio
 	connection = pymongo.MongoClient('mongodb://localhost')
 	db = connection.portfolio
 	portfolio_works = list(db.works.find({}, projection={'_id': False}))
-	
-	return render_template('index.html', portfolio_works=portfolio_works)
+	return render_template(
+		'index.html',
+		portfolio_works=portfolio_works,
+		skills=skills)
 
 @app.route('/test', methods=['POST'])
 def contact_us():
