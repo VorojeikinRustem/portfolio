@@ -18,9 +18,12 @@ def index():
 	connection = pymongo.MongoClient('mongodb://localhost')
 	db = connection.portfolio
 	portfolio_works = list(db.works.find({}, projection={'_id': False}))
+
+	testimonials = list(db.testimonials.find({}, projection={'_id': False}))
 	return render_template(
 		'index.html',
 		portfolio_works=portfolio_works,
+		testimonials=testimonials,
 		skills=skills)
 
 @app.route('/test', methods=['POST'])
@@ -29,7 +32,10 @@ def contact_us():
 		print('POST METHOD')
 	else:
 		print('WTF')
-		
+
+@app.route('/temp')
+def temp():
+	return render_template('temp.html')
 
 if __name__ == '__main__':
 	app.run()

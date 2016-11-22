@@ -3,8 +3,17 @@
 		<title>Python/Frontend разработчик. Тестировщик.</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
+	<!-- Styles of connected libraries -->
 	<link rel="stylesheet" type="text/css" href="static/semantic/dist/semantic.min.css">
+	<!-- DEPRECATED
+	<link rel="stylesheet" type="text/css" href="static/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="static/slick/slick-theme.css"> -->
+
+	<link rel="stylesheet" href="static/owlcarousel/assets/owl.carousel.css">
+	<link rel="stylesheet" href="static/owlcarousel/assets/owl.theme.default.min.css">
+	<!-- Own styles -->
 	<link rel="stylesheet" type="text/css" href="static/css/styles.css">
+
 	<body>
 
 		<!-- Menu -->
@@ -101,6 +110,34 @@
 			</div>
 		</div>
 
+<h2 class="ui horizontal divider header">
+  Отзывы
+</h2>
+		<!-- Testimonials -->
+		<div id="testimonials" class="ui vertical stripe segment">
+			<div class="ui text container">
+				<!-- <h2 class="ui center aligned header">Отзывы</h2> -->
+                <div class="ui relaxed divided items own-owl-carousel">
+                	{% for testimonial in testimonials %}
+						<div class="item">
+							<div class="content">
+								<!-- <h3>Исправление проблем в верстке</h3> -->
+								<div class="own-description">
+									<i class="quote left icon"></i>
+									{{ testimonial.testimonial }}
+									<i class="quote right icon"></i>
+								</div>
+								<div class="own-author">
+									– {{ testimonial.author }}
+								</div>
+								<a class="own-testimonial-link" href="{{ testimonial.link }}">{{ testimonial.position }}<i class="linkify icon"></i></a>
+							</div>
+								
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
 
 		<!-- About -->
 		<div id="about" class="ui vertical stripe segment">
@@ -135,39 +172,6 @@
 			</div>
 		</div>
 
-		
-
-		<!-- Testimonials -->
-		<div id="testimonials" class="ui vertical stripe segment">
-			<div class="ui text container">
-				<h2 class="ui center aligned header">Отзывы</h2>
-                <div class="ui relaxed divided items">
-					<div class="item">
-						<div class="content">
-							<a class="header">Backend разработчик на Python</a>
-							<div class="description">
-								Отличный Python программист! Помог нам с dashboard, nginx, django, mongoDB, fabric и прочее.
-							</div>
-							<div class="extra">
-								Алексей Воробьев
-								<a href="https://www.fl.ru/users/te7ris/opinions/#p_160764-2"><i class="linkify icon"></i></a>
-							</div>
-						</div>
-					</div><div class="item">
-						<div class="content">
-							<h3>Исправление проблем в верстке</h3>
-							<div class="description">
-								Рустем, грамотный специалист, довольно быстро понял проблему и также быстро нашел решение, которого никак не удавалось найти, в общении приятен и вежлив, внимателен к деталям. Рекомендую.
-							</div>
-							<div class="extra">
-								Василий Ларионов
-								<a href="https://freelansim.ru/freelancers/te7ris/opinions"><i class="linkify icon"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<!-- Contact us -->
 		<div id="contact" class="ui vertical stripe center aligned inverted segment">
@@ -221,84 +225,17 @@
 			</div>
 		</div>
 
-				
-<!-- 
-				<div class="ui massive horizontal list">
-			  		<a href="https://vk.com/te7ris">
-						<i class="vk icon"></i>
-					</a>
-			  		<a href="https://ru.linkedin.com/in/rustem-vorozheykin">
-						<i class="linkedin icon item"></i>
-					</a>
-			  		<a href="skype:stifan_100?chat">
-						<i class="skype icon item"></i>
-					</a>
-			  		<a href="https://www.instagram.com/_te7ris/">
-						<i class="instagram icon item"></i>
-					</a>
-			  		<a href="https://github.com/VorojeikinRustem">
-						<i class="github icon item"></i>
-					</a>
-			  	</div>
-			</div>
-		</div> -->
-
-		<!-- <header class="ui block grid header container">
-			<div class="three wide column">
-				<img class="ui left floated small circular image" src="static/img/avatar.jpg">
-			</div>
-			<div class="nine wide column">
-			  	<h1>Rustem Vorozheykin</h1> 
-			  	<h3>Python/Frontend developer. Tester</h3>
-			  	<div class="ui massive horizontal list">
-			  		<a href="https://vk.com/te7ris">
-						<i class="vk icon"></i>
-					</a>
-			  		<a href="https://ru.linkedin.com/in/rustem-vorozheykin">
-						<i class="linkedin icon item"></i>
-					</a>
-			  		<a href="skype:stifan_100?chat">
-						<i class="skype icon item"></i>
-					</a>
-			  		<a href="https://www.instagram.com/_te7ris/">
-						<i class="instagram icon item"></i>
-					</a>
-			  		<a href="https://github.com/VorojeikinRustem">
-						<i class="github icon item"></i>
-					</a>
-			  	</div>
-		  	</div>
-			<div class="three wide column middle aligned content">
-				<div class="ui secondary vertical pointing menu">
-					<a class="item lang-own active">
-						<i class="ru flag"></i>Russian
-					</a>
-					<a class="item lang-own">
-						<i class="us flag"></i>English
-					</a>
-				</div>
-			</div>
-		</header>
-
-		<div class="ui main container">
-		some text
-
-		</div>
-		<article>
-
-		</article>
-		<aside>
-
-		</aside>
-		<footer>
-
-		</footer> -->
 	</body>
+	<!-- Scripts of connected libraries -->
 	<script   
 		src="https://code.jquery.com/jquery-3.1.1.min.js"   
 		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   
-		crossorigin="anonymous"></script>
+		crossorigin="anonymous"></script> 
 	<script src="static/semantic/dist/semantic.min.js"></script>
     <script src="static/parallax/parallax.min.js"></script>
+  	<!-- DEPRECATED
+  	<script type="text/javascript" src="static/slick/slick.min.js"></script> -->
+	<script src="static/owlcarousel/owl.carousel.min.js"></script>
+	<!-- Own styles -->
 	<script src="static/js/scripts.js"></script>
 </html>

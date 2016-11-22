@@ -98,6 +98,7 @@ data = [
 	}
 ]
 
+
 with open("data.json", "w", encoding="utf-8") as data_file:    
 	data_file.write(json.dumps(data, ensure_ascii = False, indent=4))
 	data_file.close()

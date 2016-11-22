@@ -1,0 +1,14 @@
+[
+	{
+		"testimonial": "Отличный Python программист! Помог нам с dashboard, nginx, django, mongoDB, fabric и прочее.",
+		"author": "Алексей Воробьев",
+		"link": "https://www.fl.ru/users/te7ris/opinions/#p_160764-2",
+		"position": "Backend разработчик на Python"
+	},
+	{
+		"testimonial": "Рустем, грамотный специалист, довольно быстро понял проблему и также быстро нашел решение, которого никак не удавалось найти, в общении приятен и вежлив, внимателен к деталям. Рекомендую.",
+		"author": "Василий Ларионов",
+		"link": "https://freelansim.ru/freelancers/te7ris/opinions",
+		"position": "Исправление проблем в верстке"
+	}
+]
